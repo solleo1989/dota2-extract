@@ -212,12 +212,12 @@
         "WorldDropSound": "Item.DropRingWorld",
         "ID": "56",
         "SideShop": "1",
+        "ItemCost": "875",
+        "UIDropSound": "Item.DropRingShop",
         "AbilitySpecial": {"01": {
             "var_type": "FIELD_INTEGER",
             "bonus_health_regen": "5"
-        }},
-        "ItemCost": "875",
-        "UIDropSound": "Item.DropRingShop"
+        }}
     },
     "item_recipe_hand_of_midas": {
         "Model": "models/props_gameplay/recipe.mdl",
@@ -234,9 +234,9 @@
         "AbilityCastRange": "100",
         "ItemQuality": "consumable",
         "Model": "models/props_gameplay/salve.mdl",
-        "ItemInitialCharges": "1",
         "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
         "AbilityCastPoint": "0.0",
+        "ItemInitialCharges": "1",
         "ItemShopTags": "consumable",
         "ItemPermanent": "0",
         "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
@@ -735,9 +735,9 @@
         "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
         "AbilityCastRange": "150",
         "ItemQuality": "consumable",
-        "ItemInitialCharges": "5",
         "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
         "AbilityCastPoint": "0.0",
+        "ItemInitialCharges": "5",
         "ItemShareability": "ITEM_FULLY_SHAREABLE",
         "ItemShopTags": "consumable",
         "ItemPermanent": "0",
@@ -1087,9 +1087,9 @@
         "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
         "AbilityCastRange": "150",
         "ItemQuality": "consumable",
-        "ItemInitialCharges": "5",
         "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
         "AbilityCastPoint": "0.0",
+        "ItemInitialCharges": "5",
         "ItemShareability": "ITEM_FULLY_SHAREABLE",
         "ItemShopTags": "consumable",
         "ItemPermanent": "0",
@@ -1523,6 +1523,7 @@
         "ItemPermanent": "1",
         "ItemStackable": "0",
         "ID": "41",
+        "ItemCost": "650",
         "AbilitySpecial": {
             "04": {
                 "movement_speed_percent_bonus": "-30",
@@ -1541,7 +1542,6 @@
                 "var_type": "FIELD_INTEGER"
             }
         },
-        "ItemCost": "650",
         "ItemDisplayCharges": "1"
     },
     "item_armlet": {
@@ -1666,6 +1666,7 @@
         "AbilityManaCost": "100",
         "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
         "ID": "210",
+        "ItemCost": "3850",
         "AbilitySpecial": {
             "08": {
                 "disarm_range": "4.5",
@@ -1703,8 +1704,7 @@
                 "maim_chance": "15",
                 "var_type": "FIELD_INTEGER"
             }
-        },
-        "ItemCost": "3850"
+        }
     },
     "item_recipe_ring_of_aquila": {
         "ItemResult": "item_ring_of_aquila",
@@ -2247,9 +2247,9 @@
         "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
         "AbilityCastRange": "150",
         "ItemQuality": "consumable",
-        "ItemInitialCharges": "5",
         "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
         "AbilityCastPoint": "0.0",
+        "ItemInitialCharges": "5",
         "ItemShareability": "ITEM_FULLY_SHAREABLE",
         "ItemShopTags": "consumable",
         "ItemPermanent": "0",
@@ -2821,11 +2821,11 @@
         "ItemPermanent": "0",
         "ID": "226",
         "ItemPurchasable": "0",
+        "ItemCost": "6200",
         "AbilitySpecial": {"01": {
             "bonus_damage": "100",
             "var_type": "FIELD_INTEGER"
-        }},
-        "ItemCost": "6200"
+        }}
     },
     "item_desolator": {
         "ItemDeclarations": "DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
@@ -2957,9 +2957,9 @@
         "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
         "AbilityCastRange": "150",
         "ItemQuality": "consumable",
-        "ItemInitialCharges": "5",
         "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
         "AbilityCastPoint": "0.0",
+        "ItemInitialCharges": "5",
         "ItemShareability": "ITEM_FULLY_SHAREABLE",
         "ItemShopTags": "consumable",
         "ItemPermanent": "0",
@@ -3305,11 +3305,8 @@
         "AbilityCooldown": "300.0",
         "ItemAliases": "bs",
         "ID": "121",
+        "ItemCost": "5050",
         "AbilitySpecial": {
-            "10": {
-                "var_type": "FIELD_FLOAT",
-                "respawn_time_reduction": "4.0"
-            },
             "08": {
                 "heal_on_death_per_charge": "30",
                 "var_type": "FIELD_INTEGER"
@@ -3342,24 +3339,27 @@
                 "bonus_health": "500",
                 "var_type": "FIELD_INTEGER"
             },
+            "02": {
+                "bonus_mana": "400",
+                "var_type": "FIELD_INTEGER"
+            },
             "11": {
                 "var_type": "FIELD_INTEGER",
                 "death_gold_reduction": "25"
             },
-            "02": {
-                "bonus_mana": "400",
-                "var_type": "FIELD_INTEGER"
+            "03": {
+                "var_type": "FIELD_INTEGER",
+                "bonus_health_regen": "9"
             },
             "12": {
                 "var_type": "FIELD_FLOAT",
                 "on_death_removal": "0.67"
             },
-            "03": {
-                "var_type": "FIELD_INTEGER",
-                "bonus_health_regen": "9"
+            "10": {
+                "var_type": "FIELD_FLOAT",
+                "respawn_time_reduction": "4.0"
             }
         },
-        "ItemCost": "5050",
         "ItemDisplayCharges": "1"
     },
     "item_recipe_maelstrom": {
@@ -3368,15 +3368,6 @@
         "ID": "165",
         "ItemRequirements": {"01": "item_gloves;item_mithril_hammer"},
         "ItemCost": "600",
-        "ItemShopTags": "",
-        "ItemRecipe": "1"
-    },
-    "item_recipe_soul_ring": {
-        "Model": "models/props_gameplay/recipe.mdl",
-        "ItemResult": "item_soul_ring",
-        "ID": "177",
-        "ItemRequirements": {"01": "item_ring_of_regen;item_sobi_mask"},
-        "ItemCost": "125",
         "ItemShopTags": "",
         "ItemRecipe": "1"
     },
@@ -3391,6 +3382,15 @@
         }},
         "ItemCost": "150",
         "ItemShopTags": "agi"
+    },
+    "item_recipe_soul_ring": {
+        "Model": "models/props_gameplay/recipe.mdl",
+        "ItemResult": "item_soul_ring",
+        "ID": "177",
+        "ItemRequirements": {"01": "item_ring_of_regen;item_sobi_mask"},
+        "ItemCost": "125",
+        "ItemShopTags": "",
+        "ItemRecipe": "1"
     },
     "item_mantle": {
         "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -3648,8 +3648,8 @@
         "ID": "216",
         "ItemPurchasable": "0",
         "AbilitySpecial": {},
-        "ItemCost": "0",
         "UIDropSound": "Item.DropGemShop",
+        "ItemCost": "0",
         "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
     },
     "item_ogre_axe": {
@@ -3805,6 +3805,7 @@
         "AbilityManaCost": "100",
         "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
         "ID": "98",
+        "ItemCost": "5025",
         "AbilitySpecial": {
             "04": {
                 "bonus_mana_regen": "150",
@@ -3830,8 +3831,7 @@
                 "bonus_damage": "30",
                 "var_type": "FIELD_INTEGER"
             }
-        },
-        "ItemCost": "5025"
+        }
     },
     "item_recipe_refresher": {
         "Model": "models/props_gameplay/recipe.mdl",
@@ -3895,9 +3895,9 @@
         "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
         "AbilityCastRange": "150",
         "ItemQuality": "consumable",
-        "ItemInitialCharges": "5",
         "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
         "AbilityCastPoint": "0.0",
+        "ItemInitialCharges": "5",
         "ItemShareability": "ITEM_FULLY_SHAREABLE",
         "ItemShopTags": "consumable",
         "ItemPermanent": "0",
@@ -3926,9 +3926,9 @@
         "AbilityCastRange": "100",
         "ItemQuality": "consumable",
         "Model": "models/props_gameplay/clarity.mdl",
-        "ItemInitialCharges": "1",
         "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
         "AbilityCastPoint": "0.0",
+        "ItemInitialCharges": "1",
         "ItemShopTags": "consumable",
         "ItemPermanent": "0",
         "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
@@ -4180,6 +4180,7 @@
         "AbilityManaCost": "50",
         "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
         "ID": "206",
+        "ItemCost": "3100",
         "AbilitySpecial": {
             "04": {
                 "duration": "4",
@@ -4197,8 +4198,7 @@
                 "var_type": "FIELD_INTEGER",
                 "slow": "60"
             }
-        },
-        "ItemCost": "3100"
+        }
     },
     "item_recipe_dagon_3": {
         "Model": "models/props_gameplay/recipe.mdl",
@@ -4220,8 +4220,8 @@
     },
     "item_mystery_missile": {
         "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
-        "ItemQuality": "consumable",
         "AbilityCastRange": "1050",
+        "ItemQuality": "consumable",
         "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
         "ItemInitialCharges": "2",
         "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
@@ -4364,8 +4364,8 @@
         "AbilityCastRange": "500",
         "ItemQuality": "consumable",
         "Model": "models/props_gameplay/observer_ward_bundle.mdl",
-        "ItemInitialCharges": "2",
         "AbilityCastPoint": "0.0",
+        "ItemInitialCharges": "2",
         "ItemShareability": "ITEM_FULLY_SHAREABLE_STACKING",
         "ItemStockMax": "2",
         "ItemShopTags": "consumable",
@@ -4407,8 +4407,8 @@
         "AbilityCastRange": "500",
         "ItemQuality": "consumable",
         "Model": "models/props_gameplay/sentry_ward_bundle.mdl",
-        "ItemInitialCharges": "2",
         "AbilityCastPoint": "0.0",
+        "ItemInitialCharges": "2",
         "ItemShareability": "ITEM_FULLY_SHAREABLE_STACKING",
         "ItemShopTags": "consumable",
         "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES",
@@ -4544,6 +4544,7 @@
         "AbilityCooldown": "80.0",
         "AbilityManaCost": "50",
         "ID": "194",
+        "ItemCost": "2700",
         "AbilitySpecial": {
             "08": {
                 "archer_attack_speed_radius": "400",
@@ -4577,8 +4578,7 @@
                 "var_type": "FIELD_FLOAT",
                 "summon_duration": "40.0"
             }
-        },
-        "ItemCost": "2700"
+        }
     },
     "item_recipe_rod_of_atos": {
         "ItemResult": "item_rod_of_atos",
@@ -4896,8 +4896,8 @@
     },
     "item_diffusal_blade": {
         "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
-        "ItemQuality": "artifact",
         "AbilityCastRange": "600",
+        "ItemQuality": "artifact",
         "AbilitySharedCooldown": "diffusal",
         "ItemBaseLevel": "1",
         "ItemInitialCharges": "8",
